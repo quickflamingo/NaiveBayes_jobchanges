@@ -81,7 +81,7 @@ Figure 1: Confusion matrix test set
 
 </div>
 
-Figure @ref(fig:cm) shows the confusion matrix together with a few
+Figure 1 shows the confusion matrix together with a few
 evaluation metrics after running the model on the test data. The
 sensitivity of the model is 0.883, which indicates that 88.3% of the
 people that switched jobs are correctly identified. The specificity of
