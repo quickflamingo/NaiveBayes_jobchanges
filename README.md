@@ -36,6 +36,12 @@ We want to classify an observation into one of *K* classes, in our case,
 density function of *X* for an observation that comes from the *k*th
 class. The theorem states that
 
+<div class="figure" style="text-align: center">
+
+<img src="naivebayesrmd---kopie_files/figure-markdown_github/nb1.gif" alt="eq1"  />
+
+</div>
+
 where Pr(*Y*=*k*∣*X*=*x*) is the posterior probability that an
 observation *X* = *x* belongs to the *k*th class, *π*<sub>*k*</sub> is
 the overall prior probability that a randomly selected observation comes
@@ -43,9 +49,21 @@ from the *k*th class, and *l* = 1, 2, …, *K* (James et al. 2013). Naïve
 Bayes assumes that within the *k*th class, the *p* predictors are
 independent. This means that
 
+<div class="figure" style="text-align: center">
+
+<img src="naivebayesrmd---kopie_files/figure-markdown_github/nb2.gif" alt="eq2"  />
+
+</div>
+
 where *j* = 1, 2, …, *p*, *k* = 1, 2, …, *K*, and *p* = 10. By
 substituting equation (2) in (1), the final formula for posterior
 probability can then be obtained:
+
+<div class="figure" style="text-align: center">
+
+<img src="naivebayesrmd---kopie_files/figure-markdown_github/nb3.gif" alt="eq3"  />
+
+</div>
 
 The posterior probability can then be used to classify the observations.
 To avoid zero probability in our model, Laplace smoothing parameter *α*
@@ -58,7 +76,7 @@ the model.
 
 <img src="naivebayesrmd---kopie_files/figure-markdown_github/cm-1.png" alt="Confusion matrix test set"  />
 <p class="caption">
-Confusion matrix test set
+Figure 1: Confusion matrix test set
 </p>
 
 </div>
